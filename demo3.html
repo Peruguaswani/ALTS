@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                text-align: center;
+            }
+            .flip:hover{
+                transform: rotatex(360deg);
+            }
+            .blur{
+                filter:blur(5px);
+            }
+            .blur:hover{
+                filter:blur(0);
+            }
+            .pulse{
+                animation:pulse 0.5s infinite alternate;
+            }
+            @keyframes pulse{
+                0%{transform: scale(1); opacity:1;}
+                100% {transform: scale(1.1); opacity: 0.8;}
+            }
+            .shake:hover{
+                animation: shake 0.3s infinite;
+            }
+            @keyframes shake {
+                0%,100%{transform:translate(0);}
+                25%{ transform:translate(-5px);}
+                50%{transform:translate(5px);}
+                75%{transform:translate(-5px);}
+            }
+            .spin:hover{
+                transform: rotate(360deg);
+            }
+            .tilt:hover{
+                transform:skewX(10deg);
+            }
+        </style>
+        <body>
+            <h1>Aswesome Image Effects</h1>
+            <div class="container">
+                <div>
+                    <h2>1.FLOATING EFFECT</h2>
+                    <img src="https://www.redwolf.in/image/cache/catalog/stickers/tom-and-jerry-duo-sticker-india-600x800.jpg?m=1687857918" alt="FLOATING IMAGE" class="float">
+                </div>
+                <div>
+                    <h2>2.Flip effect</h2>
+                    <img src="https://www.redwolf.in/image/cache/catalog/stickers/tom-and-jerry-duo-sticker-india-600x800.jpg?m=1687857918" alt="Flip image" class="flip">
+                </div>
+                <div>
+                    <h2>3.Blur to focus Effect</h2>
+                    <img src="https://www.redwolf.in/image/cache/catalog/stickers/tom-and-jerry-duo-sticker-india-600x800.jpg?m=1687857918" alt="Blur image" class="blur">
+                </div>
+                <div>
+                    <h2>4.pulsing Effect</h2>
+                    <img src="https://www.redwolf.in/image/cache/catalog/stickers/tom-and-jerry-duo-sticker-india-600x800.jpg?m=1687857918" alt="pulse image" class="pulse">
+                </div>
+                <div>
+                    <h2>5.shake effect</h2>
+                    <img src="https://www.redwolf.in/image/cache/catalog/stickers/tom-and-jerry-duo-sticker-india-600x800.jpg?m=1687857918" alt="shake image" class="shake">
+                </div>
+                <div>
+                    <h2>6.spin effects</h2>
+                    <img src="https://www.redwolf.in/image/cache/catalog/stickers/tom-and-jerry-duo-sticker-india-600x800.jpg?m=1687857918" alt="spin image" class="spin">
+                </div>
+                <div>
+                    <h2>7.skew effects</h2>
+                    <img src="https://www.redwolf.in/image/cache/catalog/stickers/tom-and-jerry-duo-sticker-india-600x800.jpg?m=1687857918" alt="skew effect" class="skew";
+                </div>
+            </div>
+        </body>
+    </head>
+    
